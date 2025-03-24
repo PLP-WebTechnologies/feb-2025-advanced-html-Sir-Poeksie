@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>House of Rotunda - Coming Soon</title>
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="/webdev/style.css">
+    <script defer src="/webdev/script.js"></script>
 </head>
 <body>
 
@@ -26,7 +26,7 @@
         </ul>
     </nav>
 
-    <!-- Ordered List (Roman Numerals) -->
+    <!-- Ordered List (Roman Numerals Centered) -->
     <section id="about">
         <h2>Our Core Values</h2>
         <ol class="roman-list">
@@ -38,11 +38,31 @@
         </ol>
     </section>
 
-    <!-- External Image -->
+    <!-- Video Section -->
     <section id="gallery">
         <h2>Our Latest Collection</h2>
-        <img src="https://images.pexels.com/photos/3785331/pexels-photo-3785331.jpeg" alt="Fashion Model in Dark Luxury Outfit">
+        <video controls>
+            <source src="fashion-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Sort this out to be relative and all in the same row, and all be the same size -->
+        <div class="image-gallery">
+            <div class="image-container">
+                <img src="https://images.pexels.com/photos/983657/pexels-photo-983657.jpeg" alt="Collection Item 1">
+                <div class="overlay">Collection Item 1</div>
+            </div>
+            <div class="image-container">
+                <img src="https://images.pexels.com/photos/256236/pexels-photo-256236.jpeg" alt="Collection Item 2">
+                <div class="overlay">Collection Item 2</div>
+            </div>
+            <div class="image-container">
+                <img src="https://images.pexels.com/photos/380782/pexels-photo-380782.jpeg" alt="Collection Item 3">
+                <div class="overlay">Collection Item 3</div>
+            </div>
+        </div>
     </section>
+
 
     <!-- Table of Contacts -->
     <section id="contacts">
@@ -108,7 +128,7 @@
             <input type="radio" name="gender" value="Female" required> Female
             <input type="radio" name="gender" value="Other" required> Other
 
-            <label for="fashion">Style Interest:</label>
+            <label for="fashion">Preferred Style:</label>
             <select id="fashion" name="fashion">
                 <option value="luxury">Luxury</option>
                 <option value="goth">Neo-Goth</option>
